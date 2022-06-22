@@ -267,6 +267,11 @@ webhook:
   # Path to a file containing a WebhookConfiguration object used to configure the webhook
   # - --config=<path-to-config-file>
 
+  extraEnv: []
+  # - name: SOME_VAR
+  #   value: 'some value'
+
+
   resources: {}
     # requests:
     #   cpu: 10m
@@ -398,6 +403,10 @@ cainjector:
   extraArgs: []
   # Enable profiling for cainjector
   # - --enable-profiling=true
+
+  extraEnv: []
+  # - name: SOME_VAR
+  #   value: 'some value'
 
   resources: {}
     # requests:

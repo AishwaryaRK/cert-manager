@@ -138,6 +138,7 @@ The following table lists the configurable parameters of the cert-manager chart 
 | `webhook.serviceAnnotations` | Annotations to add to the webhook service | `{}` |
 | `webhook.config` | WebhookConfiguration YAML used to configure flags for the webhook. Generates a ConfigMap containing contents of the field. See `values.yaml` for example. | `{}` |
 | `webhook.extraArgs` | Optional flags for cert-manager webhook component | `[]` |
+| `webhook.extraEnv` | Optional environment variables for cert-manager webhook component | `[]` |
 | `webhook.serviceAccount.create` | If `true`, create a new service account for the webhook component | `true` |
 | `webhook.serviceAccount.name` | Service account for the webhook component to be used. If not set and `webhook.serviceAccount.create` is `true`, a name is generated using the fullname template |  |
 | `webhook.serviceAccount.annotations` | Annotations to add to the service account for the webhook component |  |
@@ -172,6 +173,7 @@ The following table lists the configurable parameters of the cert-manager chart 
 | `cainjector.podLabels` | Labels to add to the cert-manager cainjector pod | `{}` |
 | `cainjector.deploymentAnnotations` | Annotations to add to the cainjector deployment | `{}` |
 | `cainjector.extraArgs` | Optional flags for cert-manager cainjector component | `[]` |
+| `cainjector.extraEnv` | Optional environment variables for cert-manager cainjector component | `[]` |
 | `cainjector.serviceAccount.create` | If `true`, create a new service account for the cainjector component | `true` |
 | `cainjector.serviceAccount.name` | Service account for the cainjector component to be used. If not set and `cainjector.serviceAccount.create` is `true`, a name is generated using the fullname template |  |
 | `cainjector.serviceAccount.annotations` | Annotations to add to the service account for the cainjector component |  |
